@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Ilmiah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Kalkulator Ilmiah</h1>
+        <p class="subtitle">Scientific Calculator</p>
+
+        <input
+            type="text"
+            id="display"
+            placeholder="0"
+            readonly
+            aria-label="Layar kalkulator"
+        >
+
+        <div class="buttons">
+            <button class="function" data-value="sin(">sin</button>
+            <button class="function" data-value="cos(">cos</button>
+            <button class="function" data-value="tan(">tan</button>
+            <button class="function" data-value="log(">log</button>
+
+            <button class="function" data-value="sqrt(">√</button>
+            <button class="function" data-value="^2">x²</button>
+            <button class="function" data-value="^">xʸ</button>
+            <button class="function" data-value="ln(">ln</button>
+
+            <button class="function" data-value="(">(</button>
+            <button class="function" data-value=")">)</button>
+            <button class="function" data-value="pi">π</button>
+            <button class="function" data-value="e">e</button>
+
+            <button class="clear" data-action="clear">AC</button>
+            <button class="function" data-action="delete">DEL</button>
+            <button class="operator" data-value="/">÷</button>
+            <button class="operator" data-value="*">×</button>
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button class="operator" data-value="-">−</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button class="operator" data-value="+">+</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button class="operator" data-value="%">%</button>
+
+            <button data-value="0">0</button>
+            <button data-value=".">.</button>
+            <button data-value="ans">Ans</button>
+            <button class="equals" data-action="calculate">=</button>
+        </div>
+
+        <p class="note">Mode sudut: Derajat (DEG)</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
